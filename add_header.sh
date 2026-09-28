@@ -20,9 +20,9 @@ fi
 
 filename=$1
 Owner=$(ls -l "$1" | awk '{ print $3 }')
-month=$(ls -l "$1" | awk '{ print $6 }')
-day=$(ls -l "$1" | awk '{ print $7 }')
-timestamp=$(ls -l "$1" | awk '{ print $8 }')
+month=$(ls -l "$1" | awk '{ print $7 }')
+day=$(ls -l "$1" | awk '{ print $8 }')
+timestamp=$(ls -l "$1" | awk '{ print $9 }')
 
 tempfile=$(mktemp) 
 
